@@ -1,0 +1,13 @@
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+1.  Configure git with name and email of author
+    1.  git config --global user.name "Sam Smith"
+    2.  git config --global user.email sam@example.com
+2. Initialize the directory as a git repository
+    1.  cd to the code folder and input the init command.
+    2. git init
+3.  Stash
+    git add *
+
+4.  Commit
+
+5.  Push 
