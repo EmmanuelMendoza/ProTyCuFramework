@@ -10,5 +10,4 @@ Then I enter "<search_term>" on the seach text box
 
 Examples:
 | search_term   |
-| Hello         |
 | Documentation |

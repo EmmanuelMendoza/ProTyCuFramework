@@ -19,3 +19,11 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
     origin is the added remote repository, master is the branch
     When creating a git repository by default the main branch is master.
 
+
+To get changes from a repository use:
+git pull origin master
+
+To create a branch use
+git checkout -b dev
+
+Use git branch to see list of branches
