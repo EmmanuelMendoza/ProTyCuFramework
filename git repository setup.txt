@@ -34,7 +34,7 @@ Use "git checkout dev" to change to the dev branch
 1.
 2.
 3.
-Merge Sequence:
+Merge Sequence::
 To merge changes from dev branch to master branch
 1.  Switch to master branch 
     git checkout master
