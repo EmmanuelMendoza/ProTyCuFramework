@@ -26,4 +26,5 @@ git pull origin master
 To create a branch use
 git checkout -b dev
 
-Use git branch to see list of branches
+Use "git branch" to see list of branches
+Use "git checkout dev" to change to the dev branch
