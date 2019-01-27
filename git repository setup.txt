@@ -5,9 +5,17 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
 2. Initialize the directory as a git repository
     1.  cd to the code folder and input the init command.
     2. git init
-3.  Stash
+3.  Create .gitignore to exclude folders, i.e. node_modules
+    touch .gitignore && echo "node_modules/" >> .gitignore
+4.  Staging files
     git add *
+    git status to show the added files
+5.  Commit
+    git commit -m "Firs commit"
+6.  Add remote repositoy address (origin)
+    git remote add origin https://github.com/EmmanuelMendoza/ProTyCuFramework.git
+7.  Push
+    git push origin master
+    origin is the added remote repository, master is the branch
+    When creating a git repository by default the main branch is master.
 
-4.  Commit
-
-5.  Push 

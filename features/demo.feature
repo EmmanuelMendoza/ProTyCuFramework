@@ -13,4 +13,4 @@ Examples:
 | add       | 5         | 3         | 8         |
 | substract | 5         | 3         | 2         |
 | divide    | 15        | 3         | 5         |
-| modulo    | 4         | 2         | 2         |
+| modulo    | 4         | 2         | 0         |
