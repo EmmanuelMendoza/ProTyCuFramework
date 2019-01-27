@@ -14,3 +14,4 @@ Examples:
 | substract | 5         | 3         | 2         |
 | divide    | 15        | 3         | 5         |
 | modulo    | 4         | 2         | 0         |
+| multiply  | 5         | 0         | 0         |
