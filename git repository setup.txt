@@ -37,3 +37,5 @@ To merge changes from dev branch to master branch
 3. Merge the dev branch into master branch
     git merge dev
 4. Update all local repositories/pull changes
+
+EOF
