@@ -28,3 +28,11 @@ git checkout -b dev
 
 Use "git branch" to see list of branches
 Use "git checkout dev" to change to the dev branch
+
+To merge changes from dev branch to master branch
+1.  Switch to master branch 
+    git checkout master
+2.  Use git pull to fetch the latest master code
+    git pull origin master
+3. Merge the dev branch into master branch
+    git merge dev
