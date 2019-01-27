@@ -36,10 +36,10 @@ To merge changes from dev branch to master branch
     git pull origin master
 3. Merge the dev branch into master branch
     git merge dev
-4. Push the changes to master branch
-    git push origin master
     At this stage the merge was done locally
     We still need to push the changes to the remote repository
+4. Push the changes to master branch
+    git push origin master
 5. Update local repositories /pull changes
 
 EOF
