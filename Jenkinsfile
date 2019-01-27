@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Run Tests') {
+    stage('Install npm packages') {
       steps {
-        bat(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true)
+        bat(script: 'npm install', returnStatus: true, returnStdout: true)
       }
     }
   }
