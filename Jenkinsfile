@@ -6,5 +6,10 @@ pipeline {
         bat(script: 'npm install', returnStatus: true, returnStdout: true)
       }
     }
+    stage('Run tests') {
+      steps {
+        bat(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true)
+      }
+    }
   }
 }
