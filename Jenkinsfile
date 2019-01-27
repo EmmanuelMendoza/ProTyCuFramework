@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run tests') {
       steps {
-        sh 'npm run cucumbertest'
+        powershell(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true)
       }
     }
   }
