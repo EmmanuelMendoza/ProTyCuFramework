@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run tests') {
       steps {
-        bat(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true)
+        sh 'npm run cucumbertest'
       }
     }
   }
