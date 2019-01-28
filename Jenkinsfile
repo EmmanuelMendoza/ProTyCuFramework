@@ -9,7 +9,7 @@ pipeline {
       }
     }
     stage('Publish HTML report') {
-
+      steps {
         publishHTML([
             allowMissing: true,
             alwaysLinkToLastBuild: true,
@@ -18,6 +18,7 @@ pipeline {
             reportFiles: 'index.html',
             reportName: 'Protractor Test Report',
             reportTitles: ''])
+      }
     }
   }
 }
