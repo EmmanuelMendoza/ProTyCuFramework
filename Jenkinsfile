@@ -1,14 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('Install npm packages') {
+    stage('Test') {
       steps {
-        bat(script: 'npm install', returnStatus: true, returnStdout: true)
-      }
-    }
-    stage('Run tests') {
-      steps {
-        powershell(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true)
+        bat(script: 'npm install', returnStatus: true, returnStdout: true, label: 'install')
+        bat(script: 'npm run webdriver-update', returnStatus: true, returnStdout: true, label: 'webdriver-manager')
+        bat(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true, label: 'cucumber')
       }
     }
   }
