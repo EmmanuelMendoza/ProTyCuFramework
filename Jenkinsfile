@@ -8,10 +8,5 @@ pipeline {
         bat(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true, label: 'cucumber')
       }
     }
-    stage('Publish HTML report') {
-      steps {
-        bat(script: 'publishHTML(target:[allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: \'reports\', reportFiles: \'index.html\', reportName: \'HTML Report\', reportTitles: \'\'])', returnStatus: true, returnStdout: true, label: 'HTMLReport')
-      }
-    }
   }
 }
