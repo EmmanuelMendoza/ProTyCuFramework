@@ -8,5 +8,16 @@ pipeline {
         bat(script: 'npm run cucumbertest', returnStatus: true, returnStdout: true, label: 'cucumber')
       }
     }
+    stage('Publish HTML report') {
+
+        publishHTML([
+            allowMissing: true,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'reports',
+            reportFiles: 'index.html',
+            reportName: 'Protractor Test Report',
+            reportTitles: ''])
+    }
   }
 }
